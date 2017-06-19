@@ -1,0 +1,2 @@
+rm test_mapsembler2.sbatch.[eo]_*
+rm TEST_RESULT

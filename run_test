@@ -1,0 +1,10 @@
+#!/bin/env python
+import subprocess
+
+def run_and_get_jobid_for (command):
+    jobinfo = subprocess.check_output(command) 
+    return jobinfo
+
+jobinfo = run_and_get_jobid_for(['sbatch', 'test_mapsembler2.sbatch']) 
+
+print("'" + jobinfo + "'")
